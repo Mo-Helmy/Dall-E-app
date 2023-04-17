@@ -24,19 +24,21 @@ const App = () => (
         <Route path="/create-post" element={<CreatePost />} />
       </Routes>
     </main>
-    <footer className="w-full flex justify-center items-center bg-white px-6 py-12">
-      Copyright © {new Date().getFullYear()} All rights reserved | This project
-      is made with{' '}
-      <span style={{ color: 'tomato', fontWeight: 'bold', fontSize: '24px' }}>
-        ♡
-      </span>{' '}
-      by{' '}
-      <a
-        href="https://mohelmy-portfolio.vercel.app/"
-        style={{ color: 'tomato', fontWeight: 'bold' }}
-      >
-        Mo.Helmy
-      </a>
+    <footer className="w-full flex justify-center items-center bg-white px-6 py-12 text-center">
+      <p className="text-center">
+        Copyright © {new Date().getFullYear()} All rights reserved | This
+        project is made with{' '}
+        <span style={{ color: 'tomato', fontWeight: 'bold', fontSize: '24px' }}>
+          ♡
+        </span>{' '}
+        by{' '}
+        <a
+          href="https://mohelmy-portfolio.vercel.app/"
+          style={{ color: 'tomato', fontWeight: 'bold' }}
+        >
+          Mo.Helmy
+        </a>
+      </p>
     </footer>
   </BrowserRouter>
 );
